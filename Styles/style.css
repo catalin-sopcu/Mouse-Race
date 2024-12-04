@@ -1,0 +1,153 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.game_container {
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 400px;
+    width: 400px;
+}
+
+.game_container .start_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.game_container .start_container hr {
+    background: black;
+    width: 75%;
+    height: 1px;
+    background: gray;
+    border: none;
+}
+
+.game_container .start_container h2 {
+    margin: 0 5px;
+    font-size: 35px;
+}
+
+.game_container .start_container p {
+    margin: 0 5px;
+    color:gray;
+    font-size:12px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.8s, opacity 0.8s linear;
+}
+
+
+
+
+.play_container {
+    width: 400px;
+    height: 400px;
+    flex-direction: column;
+}
+
+.play_container  .play_canvas_component {
+    width: 400px;
+    height: 360px;
+}
+.play_container  .play_score_component {
+    background: gray;
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+}
+
+.play_container  #score_counter {
+    background: white;
+    padding: 5px;
+    width: 50%;
+    align-text: center;
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+
+.end_container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.end_container .end_title_component {
+    width: 250px;
+    background: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.end_container .end_title_component h2 {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.end_container .end_generic_component {
+    display: flex;
+    width: 250px;
+    background: lightgrey;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    margin: 5px 0;
+    margin-bottom: 0px;
+}
+
+.end_container .end_generic_component h2 {
+    padding-left: 10px;
+    font-size: 15px;
+    margin: 5px;
+    color: dimgray;
+}
+
+.end_container .end_generic_component #score_final {
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 3px;
+    text-align: right;
+    flex: 1 1;
+    margin-right: 15px;
+    color: dimgray;
+    background: white;
+    padding-right: 3px;
+    border-radius: 2px;
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: right;
+}
+
+
+
+.active{
+    display:flex;
+}
+
+.inactive{
+    display:none;
+}

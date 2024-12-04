@@ -1,0 +1,22 @@
+{
+  "name": "Assigment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "devDependencies": {
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "scripts": {
+    "start": "webpack serve --open --port 8080",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.2"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <div class="game_container">
+        <div class="start_container active">
+            <h2>Mouse Race</h2>
+            <hr />
+            <p>Press anywhere to start!</p>
+        </div>
+        <div class="play_container inactive">
+            <canvas class="play_canvas_component"></canvas>
+            <div class="play_score_component">
+                <div id="score_counter">Score: 0</div>
+            </div>
+        </div>
+        <div class="end_container inactive">
+            <div class="end_title_component">
+                <h2>Game over!</h2>
+            </div>
+            <div class="end_generic_component">
+                <h2>Your score: </h2>
+                <div id="score_final">20</div>
+            </div>
+            <div class="end_generic_component">
+                <h2>Play again </h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="dist/bundle.js"></script>
+</html>
